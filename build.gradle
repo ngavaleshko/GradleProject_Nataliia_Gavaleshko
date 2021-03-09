@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group 'GradleProject'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    implementation 'org.springframework: spring-context: 5.2.11.RELEASE'
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.18.12'
+}
